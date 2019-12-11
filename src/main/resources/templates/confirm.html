@@ -5,9 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-<form action="#" th:action="@{/processform}" method="post">
-    Email: <input type="text" name="email" />
-    <input type="submit" value="Submit" />
-</form>
+    <p th:inline="text">
+        The email used was [[${emailval}]].
+    </p>
 </body>
 </html>
